@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-06-21 13:49:42
+ * @LastEditTime: 2021-06-22 18:06:38
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \django-lession\lession4\4-1_orm与django的model基础知识.md
+-->
 # orm与django的model基础知识  
 
 ## 什么是orm  
@@ -14,5 +22,21 @@
 
 兼容性好，支持目前市面上多数的关系型数据库，如mysql prestresql salite等  
 
-## 
+## django的orm  
 
+django中虚拟对象数据库也叫模型，通过模型实现对目标数据库的读写进行操作，实现如下：  
+
+- 在settings.py 中设置数据库信息（需提前在数据库中创建库）  
+- 在应用app的models.py中以类的形式定义模型  
+- 通过模型在目标数据库中创建对应的表  
+- 在视图函数中通过对模型的操作实现目标数据库的读写操作  
+
+## settings中的数据库配置  
+
+
+## models层的书写  
+
+## 同步数据库  
+
+Python mange.py makemigrateions 在migrate文件夹下生成 initialpy脚本文件  
+Python manage.py migrate 将initialpy脚本中的代码执行，生成相对应的数据表  
