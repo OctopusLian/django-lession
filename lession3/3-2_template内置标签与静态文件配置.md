@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-17 16:56:34
- * @LastEditTime: 2021-06-22 13:44:34
+ * @LastEditTime: 2021-06-24 15:45:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \django-lession\lession3\3-2_template内置标签与静态文件配置.md
@@ -24,5 +24,14 @@
 ```py
 STATICFILES_DIRS = (os.path.join(BASE_DIR, ‘static’), )  
 ```
+
+## 哪些是静态文件  
+
+Css 样式文件  
+Javascript 文件  
+Image 图片文件等  
+
+
+
 
 
